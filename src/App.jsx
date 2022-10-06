@@ -6,7 +6,7 @@ import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
-    <div className="cursor-default">
+    <div className="cursor-default font-akrobatRegular">
       <div className="h-[20px] w-full bg-red-500"></div>
       <Overlay />
       <Sidebar />
