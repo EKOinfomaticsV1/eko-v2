@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         akrobatRegular: ["Akrobat-Regular"],
-        akrobatSemiBold: ["Akrobat-SemiBold"],
+        gillSans: ["Gill-Sans"],
+        // akrobatSemiBold: ["Akrobat-SemiBold"],
       },
     },
   },

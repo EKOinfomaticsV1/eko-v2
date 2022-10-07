@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* fonts */
+@font-face {
+  font-family: "Akrobat-Regular";
+  src: url("../fonts/Akrobat/Akrobat/Commercial/OTF/Akrobat-Regular.otf");
+}
+
+@font-face {
+  font-family: "Gill-Sans";
+  src: url("../fonts/Gill-Sans-Font-Family/Gill Sans.otf");
+}
+
+/* @font-face {
+  font-family: "Akrobat-SemiBold";
+  src: url("../fonts/Akrobat/Akrobat/Commercial/OTF/Akrobat-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "Akrobat-Bold";
+  src: url("../fonts/Akrobat/Akrobat/Commercial/OTF/Akrobat-Bold.otf");
+} */
+
 .gradient-tb-black {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -14,7 +35,7 @@
   );
 }
 
-.gradient-radial-blue {
+/* .gradient-radial-blue {
   background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
@@ -23,24 +44,33 @@
     rgba(0, 1, 33, 1) 91%,
     rgba(0, 0, 0, 0.9514180672268907) 100%
   );
-}
+} */
 
-.boxshadow-blur {
+/* .boxshadow-blur {
   box-shadow: 10px 10px 50px 80px rgba(0, 0, 0, 0.767) inset,
     -10px -10px 50px 80px rgba(0, 0, 0, 0.767) inset;
+} */
+
+.boxshadow-blur {
+  box-shadow: 5px 5px 20px 30px rgba(0, 0, 0, 0.767) inset,
+    -5px -5px 20px 30px rgba(0, 0, 0, 0.767) inset;
 }
 
-@font-face {
-  font-family: "Akrobat-Regular";
-  src: url("../fonts/Akrobat/Akrobat/Commercial/OTF/Akrobat-Regular.otf");
+.fade-in-out {
+  animation: fade 1s ease-in;
 }
 
-@font-face {
-  font-family: "Akrobat-SemiBold";
-  src: url("../fonts/Akrobat/Akrobat/Commercial/OTF/Akrobat-SemiBold.otf");
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-@font-face {
-  font-family: "Akrobat-Bold";
-  src: url("../fonts/Akrobat/Akrobat/Commercial/OTF/Akrobat-Bold.otf");
+.boxshadow-blur-md {
+  box-shadow: 5px 5px 20px 30px rgba(0, 0, 0, 0.767) inset,
+    -5px -5px 20px 30px rgba(0, 0, 0, 0.767) inset;
 }

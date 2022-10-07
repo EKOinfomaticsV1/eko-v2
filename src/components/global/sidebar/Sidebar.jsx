@@ -28,7 +28,7 @@ const Sidebar = () => {
               key={index}
             >
               <img src={arrow} alt="arrow" />
-              <h1>{data?.name}</h1>
+              <h1 className="tracking-[0.06em] ">{data?.name}</h1>
             </div>
           );
         })}
