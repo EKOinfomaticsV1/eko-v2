@@ -18,7 +18,7 @@ const Header = () => {
           <img
             src={eko_logo}
             alt="eko infomatics logo"
-            className="w-[80px] md:w-[100px] lg:w-[120px]"
+            className="w-[80px]  "
           />
         </div>
 
@@ -33,7 +33,7 @@ const Header = () => {
                       : index === 3
                       ? "pl-6"
                       : "px-6 lg:px-8 xl:px-10"
-                  }    pb-2 text-xl lg:text-2xl xl:text-3xl`}
+                  }    pb-2 text-xl lg:text-2xl `}
                 >
                   {data?.name}
                 </h1>
