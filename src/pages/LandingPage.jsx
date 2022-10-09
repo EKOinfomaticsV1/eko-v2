@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import hero_image from "../assets/landingPage/hero_image.gif";
 import smallScreenArrow from "../assets/landingPage/arrow-tr.svg";
 import SecondSection from "../components/landingPage/second_section/SecondSection";
+import ThirdSection from "../components/landingPage/thirdSection/ThirdSection";
 const LandingPage = () => {
   const [indexNumber, setIndexNumber] = useState(0);
   const [activeAccordian, setActiveAccordian] = useState(0);
@@ -116,7 +117,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className=" bg-black text-white">
+      <div className=" bg-black text-white pb-10">
         {/* Hero texts before sm*/}
         <div className="w-[90%] mx-auto  md:ml-auto md:mx-0 pt-20 sm:pt-32 sm:hidden">
           <h2 className="uppercase tracking-[0.06em] text-center text-sm sm:text-lg sm:text-left">
@@ -276,6 +277,7 @@ const LandingPage = () => {
 
       {/* second section */}
       <SecondSection />
+      <ThirdSection />
 
       <div className="bg-black py-10"></div>
     </>

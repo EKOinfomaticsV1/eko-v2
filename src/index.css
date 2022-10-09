@@ -74,3 +74,19 @@
   box-shadow: 5px 5px 20px 30px rgba(0, 0, 0, 0.767) inset,
     -5px -5px 20px 30px rgba(0, 0, 0, 0.767) inset;
 }
+
+.box-shadow-1 {
+  box-shadow: -29px 29px 0px 8px rgba(255, 0, 0, 1);
+  -webkit-box-shadow: -29px 29px 0px 8px rgba(255, 0, 0, 1);
+  -moz-box-shadow: -29px 29px 0px 8px rgba(255, 0, 0, 1);
+}
+
+.clip-polygon-1 {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+@media only screen and (min-width: 640px) {
+  .clip-polygon-1 {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
