@@ -1,3 +1,4 @@
+import Footer from "./components/global/footer/Footer";
 import Hamburger from "./components/global/header/Hamburger";
 import Header from "./components/global/header/Header";
 import Overlay from "./components/global/overlay/Overlay";
@@ -13,6 +14,7 @@ function App() {
       <Hamburger />
       <Header />
       <LandingPage />
+      <Footer />
     </div>
   );
 }

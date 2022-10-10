@@ -60,6 +60,8 @@ const FifthAndSixthSection = () => {
     return (
       <div
         key={index}
+        onDragStart={handleDragStart}
+        role="presentation"
         className="bg-white rounded-lg overflow-hidden text-black text-center font-gillSans mx-1 sm:mx-5 md:mx-10"
       >
         <img src={data?.image} alt="..." className="w-full " />
@@ -128,7 +130,7 @@ const FifthAndSixthSection = () => {
       </section>
 
       <section className=" py-20 pb-32">
-        <div className="flex flex-row md:flex-col gap-1  w-[95%] mx-auto  ">
+        <div className="flex flex-row md:flex-col  gap-5  w-[95%] mx-auto  ">
           <div className="flex-1 max-w-[200px] flex-col md:flex-row flex  md:max-w-none  gap-5 lg:gap-10  ">
             {capabilitiesData?.map((data, index) => {
               return (
@@ -139,17 +141,17 @@ const FifthAndSixthSection = () => {
                   <h1 className="text-white font-semibold text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl xl:w-[80%] xl:mx-auto  tracking-[0.2em] text-center  mb-2 lg:mb-5 ">
                     {data?.name}
                   </h1>
-                  {/* <div className="aspect-square w-[70%] md:w-[50%] lg:w-[70%] mx-auto">
+                  <div className="aspect-square w-[70%] md:w-[50%] lg:w-[70%] mx-auto">
                     <img src={data?.image} alt={data?.name} />
-                  </div> */}
+                  </div>
 
-                  <div className="   aspect-square w-[90%] md:w-[80%] lg:w-[90%] mx-auto">
+                  {/* <div className="   aspect-square w-[90%] md:w-[80%] lg:w-[90%] mx-auto">
                     <img
                       src={data?.image}
                       alt={data?.name}
                       className=" mx-auto"
                     />
-                  </div>
+                  </div> */}
                 </div>
               );
             })}
@@ -157,7 +159,7 @@ const FifthAndSixthSection = () => {
 
           {/* mobile  dashed boders */}
           <div className="flex-1 flex   justify-center items-center md:hidden  ">
-            <div className="   h-[80%] w-[80%]  flex flex-col  justify-between items-start">
+            <div className="   h-[80%] w-[80%]   flex flex-col  justify-between items-start">
               <div className="flex w-full   items-start ">
                 <div className="bg-[#0085FE] aspect-square w-[8px] rounded-full -translate-y-[2.5px]"></div>
                 <div className="border-t-[#0085FE] border-t-2 border-dashed flex-1"></div>
