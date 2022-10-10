@@ -4,6 +4,7 @@ import hero_image from "../assets/landingPage/hero_image.gif";
 import smallScreenArrow from "../assets/landingPage/arrow-tr.svg";
 import SecondSection from "../components/landingPage/second_section/SecondSection";
 import ThirdSection from "../components/landingPage/thirdSection/ThirdSection";
+import FifthAndSixthSection from "../components/landingPage/fifth_and_sixth_section/FifthAndSixthSection";
 const LandingPage = () => {
   const [indexNumber, setIndexNumber] = useState(0);
   const [activeAccordian, setActiveAccordian] = useState(0);
@@ -278,8 +279,7 @@ const LandingPage = () => {
       {/* second section */}
       <SecondSection />
       <ThirdSection />
-
-      <div className="bg-black py-10"></div>
+      <FifthAndSixthSection />
     </>
   );
 };

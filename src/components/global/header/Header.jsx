@@ -12,8 +12,8 @@ const Header = () => {
   const [linksData] = useRecoilState(Nav_links_atom);
 
   return (
-    <header className="bg-gradient-to-b gradient-tb-black fixed top-0 left-0 right-0 z-40 ">
-      <div className="flex justify-between  py-10 w-[90%] mx-auto">
+    <header className=" bg-black  fixed top-0 left-0 right-0 z-40 ">
+      <div className="flex justify-between  pt-10 pb-5 w-[90%] mx-auto">
         <div>
           <img
             src={eko_logo}
