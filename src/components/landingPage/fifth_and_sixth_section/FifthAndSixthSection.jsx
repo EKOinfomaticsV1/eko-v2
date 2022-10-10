@@ -10,7 +10,7 @@ import bigData from "../../../assets/forth_section/BigData.png";
 import dcCloud from "../../../assets/forth_section/DC&Cloud.png";
 
 import DataEngineering from "../../../assets/forth_section/DataEngineering.png";
-import ArtificialIntel from "../../../assets/forth_section/AI2.svg";
+import ArtificialIntel from "../../../assets/forth_section/AI2.png";
 import webDev from "../../../assets/forth_section/webDev.png";
 import BusinessIntell from "../../../assets/forth_section/BusinessIntell.png";
 import MachineLearning from "../../../assets/forth_section/ML.png";
@@ -143,7 +143,7 @@ const FifthAndSixthSection = () => {
                     <img src={data?.image} alt={data?.name} />
                   </div> */}
 
-                  <div className=" w-full   mx-auto">
+                  <div className="   aspect-square w-[90%] md:w-[80%] lg:w-[90%] mx-auto">
                     <img
                       src={data?.image}
                       alt={data?.name}
