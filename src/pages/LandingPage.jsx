@@ -7,6 +7,7 @@ import ThirdSection from "../components/landingPage/thirdSection/ThirdSection";
 import FifthAndSixthSection from "../components/landingPage/fifth_and_sixth_section/FifthAndSixthSection";
 import SeventhSection from "../components/landingPage/seventh_section/SeventhSection";
 import EightSection from "../components/landingPage/eight_section/EightSection";
+import FourthSection from "../components/landingPage/fourth_section/FourthSection";
 const LandingPage = () => {
   const [indexNumber, setIndexNumber] = useState(0);
   const [activeAccordian, setActiveAccordian] = useState(0);
@@ -281,6 +282,7 @@ const LandingPage = () => {
       {/* second section */}
       <SecondSection />
       <ThirdSection />
+      <FourthSection />
       <FifthAndSixthSection />
       <SeventhSection />
       <EightSection />
