@@ -100,3 +100,17 @@
 .vertival-rl {
   writing-mode: vertical-rl;
 }
+
+.customOverlay {
+  /* background: rgba(36, 123, 160, 0.7); */
+}
+.customModal {
+  /* background: rgba(2, 16, 71, 0.52); */
+  background: transparent;
+  /* border: 1px solid #061137; */
+
+  /* opacity: 0.8; */
+  max-width: 1200px;
+  color: white;
+  width: 100wh;
+}

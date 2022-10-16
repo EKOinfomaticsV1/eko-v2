@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 // assets
 import thridSectionImg from "../../../assets/third_section/thridSectionImg.svg";
 import earth from "../../../assets/third_section/earth.mp4";
@@ -8,7 +8,15 @@ import Defence from "../../../assets/third_section/Defence.png";
 import Manufacture from "../../../assets/third_section/Manufacture.png";
 import Banking from "../../../assets/third_section/Banking.png";
 import Healthcare from "../../../assets/third_section/Healthcare.png";
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+import ModalShow from "./ModalShow";
 function ThirdSection() {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
+  
   return (
     <section className="bg-black py-20 text-white overflow-hidden">
       <div className=" text-right text-3xl lg:text-4xl  text-white px-5 mb-20 font-semibold tracking-widest  ">
@@ -43,14 +51,14 @@ function ThirdSection() {
 
               <div className="rounded-lg p-2 border-[#0085FE] aspect-square w-[65%]  max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[130px] xl:max-w-[150px] bg-white"></div>
             </div> */}
-            <div className="w-full flex items-center z-10 translate-x-[5%] sm:-translate-x-[10%] translate-y-[10%] sm:translate-y-[10%] md:-translate-x-[5%] lg:-translate-x-[20%] xl:-translate-x-[18%] 2xl:-translate-x-[5%]  lg:translate-y-[40%] xl:translate-y-[40%] 2xl:translate-y-[40%]   overflow-hidden">
+            <div className="w-full flex items-center z-10 translate-x-[5%] sm:-translate-x-[10%] translate-y-[10%] sm:translate-y-[10%] md:-translate-x-[5%] lg:-translate-x-[10%] xl:-translate-x-[15%] 2xl:-translate-x-[5%]  lg:translate-y-[40%] xl:translate-y-[40%] 2xl:translate-y-[40%]   overflow-hidden">
               <div className="flex items-start w-[28%] sm:w-[50%] md:w-[40%] lg:w-[22%] xl:w-[18%]">
                 <div className="bg-[#0085FE] aspect-square w-[8px] rounded-full -translate-y-[2.5px]"></div>
                 <div className="border-t-[#0085FE] border-t-2 border-dashed flex-1"></div>
               </div>
 
-              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[130px]  xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
-                <h1 className="text-white font-semibold text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl xl:w-[80%] xl:mx-auto  tracking-[0.2em] text-center  mb-2 lg:mb-5 ">
+              <div onClick={() => setOpen(true)} className="cursor-pointer rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[100px] xl:max-w-[120px]  2xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
+                <h1 className="text-white font-semibold text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl xl:w-[80%] xl:mx-auto   text-center  mb-2 lg:mb-5 ">
                   RETAIL
                 </h1>
                 <div className="aspect-square  mx-auto">
@@ -66,8 +74,8 @@ function ThirdSection() {
                 <div className="border-t-[#0085FE] border-t-2 border-dashed flex-1"></div>
               </div>
 
-              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[130px]  xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
-                <h1 className="text-white font-semibold text-[12px] sm:text-base md:text-sm lg:text-lg xl:text-xl xl:w-[80%] xl:mx-auto  tracking-[0.2em] text-center  mb-2 lg:mb-5 ">
+              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[100px] xl:max-w-[120px]  2xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
+                <h1 className="text-white font-semibold text-[12px] sm:text-base md:text-sm lg:text-md xl:text-lg  xl:mx-auto   text-center  mb-2 lg:mb-5 ">
                   MANUFACTURE
                 </h1>
                 <div className="aspect-square  mx-auto">
@@ -76,14 +84,14 @@ function ThirdSection() {
               </div>
             </div>
             {/* 3 */}
-            <div className="w-full flex items-center z-10 translate-x-[30%] sm:translate-x-[15%] md:translate-x-[16%] lg:translate-x-[5%]  translate-y-[15%] overflow-hidden">
+            <div className="w-full flex items-center z-10 translate-x-[30%] sm:translate-x-[15%] md:translate-x-[16%] lg:translate-x-[5%]  translate-y-[15%] xl:translate-x-[5%] xl:translate-y-[5%] overflow-hidden">
               <div className="flex items-start w-[10%] sm:w-[30%] md:w-[10%] lg:w-[20%] xl:w-[10%]">
                 <div className="bg-[#0085FE] aspect-square w-[8px] rounded-full -translate-y-[2.5px]"></div>
                 <div className="border-t-[#0085FE] border-t-2 border-dashed flex-1"></div>
               </div>
 
-              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[130px]  xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
-                <h1 className="text-white font-semibold text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl xl:w-[80%] xl:mx-auto  tracking-[0.2em] text-center  mb-2 lg:mb-5 ">
+              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[100px] xl:max-w-[120px]  2xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
+              <h1 className="text-white font-semibold text-[12px] sm:text-base md:text-sm lg:text-md xl:text-lg  xl:mx-auto   text-center  mb-2 lg:mb-5 ">
                   HEALTHCARE
                 </h1>
                 <div className="aspect-square  mx-auto">
@@ -92,13 +100,13 @@ function ThirdSection() {
               </div>
             </div>
             {/* 4 */}
-            <div className="w-full flex items-center z-10  translate-y-[20%] translate-x-[25%] md:translate-x-[16%] lg:translate-x-[5%]  sm:translate-x-[15%] overflow-hidden">
+            <div className="w-full flex items-center z-10  translate-y-[20%] translate-x-[25%] md:translate-x-[16%] lg:translate-x-[5%]  sm:translate-x-[15%] lg:translate-y-[5%] overflow-hidden">
               <div className="flex items-start w-[28%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%]">
                 <div className="bg-[#0085FE] aspect-square w-[8px] rounded-full -translate-y-[2.5px]"></div>
                 <div className="border-t-[#0085FE] border-t-2 border-dashed flex-1"></div>
               </div>
 
-              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[130px]  xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
+              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[100px] xl:max-w-[120px]  2xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
                 <h1 className="text-white font-semibold text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl xl:w-[80%] xl:mx-auto  tracking-[0.2em] text-center  mb-2 lg:mb-5 ">
                   DEFENCE
                 </h1>
@@ -116,13 +124,13 @@ function ThirdSection() {
 
               <div className="rounded-lg p-2 border-[#0085FE] aspect-square w-[65%] bg-white max-w-[75px] sm:max-w-[100px] "></div>
             </div> */}
-            <div className="w-full flex items-center z-10 translate-x-[5%] sm:-translate-x-[10%] translate-y-[20%] lg:-translate-x-[17%] xl:-translate-x-[8%]   lg:-translate-y-[24%]   overflow-hidden">
+            <div className="w-full flex items-center z-10 translate-x-[5%] sm:-translate-x-[10%] translate-y-[20%] lg:-translate-x-[10%] xl:-translate-x-[18%] 2xl:-translate-x-[6%]    lg:-translate-y-[24%]   overflow-hidden">
               <div className="flex items-start w-[28%] sm:w-[50%] md:w-[40%] lg:w-[22%] xl:w-[18%]">
                 <div className="bg-[#0085FE] aspect-square w-[8px] rounded-full -translate-y-[2.5px]"></div>
                 <div className="border-t-[#0085FE] border-t-2 border-dashed flex-1"></div>
               </div>
 
-              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[130px]  xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
+              <div className="rounded-lg p-2 aspect-square w-[65%] max-w-[75px] sm:max-w-[100px] md:max-w-[100px] lg:max-w-[100px] xl:max-w-[120px]  2xl:max-w-[150px] bg-[#061137] border-[#0074E5] border border-opacity-50">
                 <h1 className="text-white font-semibold text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl xl:w-[80%] xl:mx-auto  tracking-[0.2em] text-center  mb-2 lg:mb-5 ">
                   BANKING
                 </h1>
@@ -133,6 +141,7 @@ function ThirdSection() {
             </div>
           </div>
         </div>
+        <ModalShow onOpenModal={onOpenModal} onCloseModal={onCloseModal} open={open} setOpen={setOpen}/>
         <div className=" flex flex-col  w-fit  pr-5 ">
           <h1 className="vertival-rl tracking-[1.2em] text-xl  flex items-end justify-start   flex-1">
             POWERS
@@ -146,6 +155,7 @@ function ThirdSection() {
         MULTILE INDUSTRIES
       </h1>
     </section>
+    
   );
 }
 
