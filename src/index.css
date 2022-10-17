@@ -103,14 +103,34 @@
 
 .customOverlay {
   /* background: rgba(36, 123, 160, 0.7); */
+  animation-fill-mode: forwards !important;
 }
 .customModal {
   /* background: rgba(2, 16, 71, 0.52); */
   background: transparent;
   /* border: 1px solid #061137; */
-
+  animation-fill-mode: forwards !important;
   /* opacity: 0.8; */
   max-width: 1200px;
   color: white;
   width: 100wh;
+}
+
+.react-responsive-modal-closeButton {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: transparent !important;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+}
+svg {
+  margin: 1rem;
+  border: none;
+}
+path {
+  fill: white;
+  margin: 5px;
 }
