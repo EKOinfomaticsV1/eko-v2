@@ -1,20 +1,19 @@
-import Footer from "./components/global/footer/Footer";
-import Hamburger from "./components/global/header/Hamburger";
-import Header from "./components/global/header/Header";
-import Overlay from "./components/global/overlay/Overlay";
-import Sidebar from "./components/global/sidebar/Sidebar";
-import LandingPage from "./pages/LandingPage";
+import { Routes, Route, Navigate } from "react-router-dom";
+import FifthAndSixthSection from "./components/landingPage/fifth_and_sixth_section/FifthAndSixthSection";
+import AI_ML from "./components/landingPage/fifth_and_sixth_section/SubPages.jsx/AI_ML";
+import Fifth_and_sixth_subpages from "./components/landingPage/fifth_and_sixth_section/SubPages.jsx/Fifth_and_sixth_subpages";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="cursor-default font-akrobatRegular">
-      <div className="h-[20px] w-full bg-red-500"></div>
-      <Overlay />
-      <Sidebar />
-      <Hamburger />
-      <Header />
-      <LandingPage />
-      <Footer />
+    <div className="">
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route
+          path="/fifth_sixth_subpage"
+          element={<Fifth_and_sixth_subpages />}
+        />
+      </Routes>
     </div>
   );
 }

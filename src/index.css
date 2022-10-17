@@ -12,7 +12,9 @@
   font-family: "Gill-Sans";
   src: url("../fonts/Gill-Sans-Font-Family/Gill Sans.otf");
 }
-
+* {
+  scroll-behavior: smooth;
+}
 /* @font-face {
   font-family: "Akrobat-SemiBold";
   src: url("../fonts/Akrobat/Akrobat/Commercial/OTF/Akrobat-SemiBold.otf");

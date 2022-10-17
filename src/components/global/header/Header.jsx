@@ -6,6 +6,7 @@ import eko_logo from "../../../assets/header/eko_logo.svg";
 // State management (recoil js)
 import { useRecoilState } from "recoil";
 import { Nav_links_atom } from "../../../recoil/helper/nav_links/Nav_links_atom";
+import { NavHashLink } from "react-router-hash-link";
 
 const Header = () => {
   // global variables
@@ -14,19 +15,20 @@ const Header = () => {
   return (
     <header className=" bg-black  fixed top-0 left-0 right-0 z-40 ">
       <div className="flex justify-between  pt-10 pb-5 w-[90%] mx-auto">
-        <div>
+        <NavHashLink to="/#">
           <img
             src={eko_logo}
             alt="eko infomatics logo"
             className="w-[80px]  "
           />
-        </div>
+        </NavHashLink>
 
         <div className="text-white justify-between  hidden md:flex">
           {linksData?.map((data, index) => {
             return (
               <div key={index} className="group cursor-pointer">
-                <h1
+                <NavHashLink
+                  to={`/#${data?.name}`}
                   className={` ${
                     index === 0
                       ? "pr-6"
@@ -36,7 +38,7 @@ const Header = () => {
                   }    pb-2 text-xl lg:text-2xl `}
                 >
                   {data?.name}
-                </h1>
+                </NavHashLink>
                 <div className="flex items-center ">
                   <div
                     className={` ${

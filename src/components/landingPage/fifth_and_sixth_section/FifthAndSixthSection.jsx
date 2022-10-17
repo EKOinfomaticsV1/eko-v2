@@ -14,6 +14,7 @@ import ArtificialIntel from "../../../assets/forth_section/AI2.png";
 import webDev from "../../../assets/forth_section/webDev.png";
 import BusinessIntell from "../../../assets/forth_section/BusinessIntell.png";
 import MachineLearning from "../../../assets/forth_section/ML.png";
+import { Link } from "react-router-dom";
 
 const FifthAndSixthSection = () => {
   const handleDragStart = (e) => e.preventDefault();
@@ -72,6 +73,22 @@ const FifthAndSixthSection = () => {
           <p className="text-gray-500 text-xs md:text-sm xl:text-md w-[80%] xl:w-[60%] mx-auto mt-2 pb-4 md:pb-6 xl:pb-8">
             {data?.content}
           </p>
+          <div className="text-[12px] md:text-[12px]  xl:text-sm capitalize font-semibold tracking-widest py-5">
+            <div className="group relative cursor-pointer  flex flex-col justify-center items-center">
+              <Link
+                className="tracking-[0.1em] pb-1"
+                // to="/fifth_sixth_subpage"
+                to={{
+                  pathname: "/fifth_sixth_subpage",
+                }}
+                state="AI/ML" // <-- from the array being mapped
+              >
+                View More
+                <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[2px] w-full transition-all duration-300 "></div>
+                <div className="bg-white h-[4px] w-[20px] absolute bottom-0 right-5 group-hover:translate-x-5 transition-all duration-300"></div>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -102,7 +119,10 @@ const FifthAndSixthSection = () => {
 
   return (
     <div className="bg-gradient-to-b from-black to-[#030c30]">
-      <section className="bg-[url('../src/assets/forth_section/section_bg.svg')] bg-center  bg-cover  w-full min-h-screen flex justify-center items-center">
+      <section
+        className="bg-[url('../src/assets/forth_section/section_bg.svg')] bg-center  bg-cover  w-full min-h-screen flex justify-center items-center"
+        id="Expertise"
+      >
         <div className="w-full mx-auto text-whit pt-10 text-white">
           <h1 className=" text-3xl sm:text-4xl md:text-5xl md:w-[80%] mx-auto text-center tracking-widest font-thin">
             We help you <span className="text-[#2AF6FF]">Bridge</span> the gap
@@ -129,7 +149,7 @@ const FifthAndSixthSection = () => {
         </div>
       </section>
 
-      <section className=" py-20 pb-32">
+      <section className=" py-20 pb-32" id="Capabilities">
         <div className="flex flex-row md:flex-col  gap-5  w-[95%] mx-auto  ">
           <div className="flex-1 max-w-[200px] flex-col md:flex-row flex  md:max-w-none  gap-5 lg:gap-10  ">
             {capabilitiesData?.map((data, index) => {
