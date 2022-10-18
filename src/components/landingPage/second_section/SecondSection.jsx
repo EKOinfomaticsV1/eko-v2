@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import video from "../../../assets/second_section/second_video.mp4";
+import AIvideo from "../../../assets/second_section/AIvideo.mp4";
 import playButton from "../../../assets/second_section/play.svg";
 import pauseButton from "../../../assets/second_section/pause.svg";
 
@@ -27,7 +28,7 @@ const SecondSection = () => {
             <video
               className="mx-auto w-[90%] sm:w-full clip-polygon-1  "
               ref={videoRef}
-              src={video}
+              src={AIvideo}
             ></video>
 
             <button

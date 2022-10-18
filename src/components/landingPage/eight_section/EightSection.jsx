@@ -9,6 +9,7 @@ import case1 from "../../../assets/eight_section/case-1.svg";
 import case2 from "../../../assets/eight_section/case-2.svg";
 import case3 from "../../../assets/eight_section/case-3.svg";
 import smallScreenArrow from "../../../assets/landingPage/arrow-tr.svg";
+import { Link } from "react-router-dom";
 
 const EightSection = () => {
   const handleDragStart = (e) => e.preventDefault();
@@ -74,11 +75,11 @@ const EightSection = () => {
               <h1 className="text-[ #010101] text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wider  mx-auto my-5 mb-10">
                 CUSTOMER CHURN PREDICTION
               </h1>
-              <p className="text-[#5C5C5C] font-gillSans md:text-lg lg:text-xl  pb-10">
+              {/* <p className="text-[#5C5C5C] font-gillSans md:text-lg lg:text-xl  pb-10">
                 Leverage AI to analyze massive data sets, better identify fraud
                 patterns, and flag fraudulent transactions as they happen in
                 real-time.
-              </p>
+              </p> */}
             </div>
           </div>
 
@@ -100,9 +101,18 @@ const EightSection = () => {
 
       <div className="h-[10%]  flex justify-center gap-5 lg:gap-10 items-center overflow-hidden">
         <div className="group relative cursor-pointer ">
-          <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-[0.1em] pb-1">
+          <Link
+            className="text-2xl xl:text-3xl 2xl:text-4xl tracking-[0.1em] pb-1"
+            to={{
+              pathname: "/get_started",
+            }}
+            state="get_started"
+          >
             <span>GET</span> <span className="font-semibold">STARTED</span>
-          </h1>
+          </Link>
+          {/* <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-[0.1em] pb-1">
+            <span>GET</span> <span className="font-semibold">STARTED</span>
+          </h1> */}
 
           <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[4px] w-full transition-all duration-300"></div>
 

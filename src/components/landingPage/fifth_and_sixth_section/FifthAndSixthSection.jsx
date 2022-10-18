@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // carousel
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -14,6 +14,13 @@ import ArtificialIntel from "../../../assets/forth_section/AI2.png";
 import webDev from "../../../assets/forth_section/webDev.png";
 import BusinessIntell from "../../../assets/forth_section/BusinessIntell.png";
 import MachineLearning from "../../../assets/forth_section/ML.png";
+
+import ModalFifthSixth from "./Modal/ModalFifthSixth";
+import DataEngineer from "../../../assets/fifth_and_sixth/capabilities/DataEngineer.png";
+import AI from "../../../assets/fifth_and_sixth/capabilities/AI.png";
+import WebDev from "../../../assets/fifth_and_sixth/capabilities/WebDev.png";
+import BI from "../../../assets/fifth_and_sixth/capabilities/BI.png";
+import ML from "../../../assets/fifth_and_sixth/capabilities/ML.png";
 import { Link } from "react-router-dom";
 
 const FifthAndSixthSection = () => {
@@ -117,6 +124,70 @@ const FifthAndSixthSection = () => {
     },
   ];
 
+  const [open, setOpen] = useState(false);
+  const [data, setData] = useState({});
+  const [image, setImage] = useState();
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
+
+  function openModals(m) {
+    console.log("Modals to open", m);
+
+    if (m === "Data Engineering") {
+      setOpen(true);
+      setData({
+        title: "Data Engineering",
+        para1:
+          "The key to understanding what data engineering lies in the “engineering” part. Engineers design and build things. “Data” engineers design and build pipelines that transform and transport data into a format wherein, by the time it reaches the Data Scientists or other end users, it is in a highly usable state. These pipelines must take data from many disparate sources and collect them into a single warehouse that represents the data uniformly as a single source of truth.",
+        para2:
+          "Sounds simple enough but a lot of data literacy skills goes into this role. This is why Data Engineers are in such short supply and why there is confusion around the role. The figure below is one example of the activities involved in data engineering.",
+      });
+      setImage(DataEngineer);
+    } else if (m === "Artificial Intelligence") {
+      setOpen(true);
+      setData({
+        title: "Artificial Intelligence",
+        para1:
+          "Among the technologies offering the most promise in addressing these issues are advanced data analytics for so-called big data; accessible, scalable cloud platforms; and AI that drives machine learning (ML). Complementing these at the field level are increasingly “smart,” self-calibrating sensors that provide offshore equipment and components with the ability to communicate status to higher-level systems. In addition, well-established global standards are facilitating machine-to-machine communication. Finally, cybersecurity standards and layered, defense-in-depth models have grown in response to the increasing frequency and sophistication of cyber threats that continue to endanger critical infrastructure, especially energy.",
+      });
+      setImage(AI);
+    } else if (m === "Web/App Development") {
+      setOpen(true);
+      setData({
+        title: " Web/App Development",
+        para1:
+          "Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.",
+      });
+      setImage(WebDev);
+    } else if (m === "Business Intelligence") {
+      setOpen(true);
+
+      setData({
+        title: "Business Intelligence",
+        para1:
+          "Business intelligence combines business analytics, data mining, data visualization, data tools and infrastructure, and best practices to help organizations make more data-driven decisions. In practice, you know you’ve got modern business intelligence when you have a comprehensive view of your organization’s data and use that data to drive change, eliminate inefficiencies, and quickly adapt to market or supply changes. Modern BI solutions prioritize flexible self-service analysis, governed data on trusted platforms, empowered business users, and speed to insight.",
+      });
+      setImage(BI);
+    } else if (m === "Machine Learning") {
+      setOpen(true);
+
+      setData({
+        title: "Machine Learning",
+        para3: {
+          l1: "Advance Analytics -real cost, revenue and risk differential",
+          l2: "ML based advanced Business analytics solutions",
+          l3: " Migration of Traditional analytics to AI and ML",
+          l4: " Semi/Unstructured Data analytics",
+          l5: " Advanced Visualization",
+        },
+      });
+      setImage(ML);
+    } else {
+      setOpen(false);
+      setData({});
+    }
+  }
   return (
     <div className="bg-gradient-to-b from-black to-[#030c30]">
       <section
@@ -155,8 +226,9 @@ const FifthAndSixthSection = () => {
             {capabilitiesData?.map((data, index) => {
               return (
                 <div
+                  onClick={() => openModals(data?.name)}
                   key={index}
-                  className="bg-[#061137]  w-fit p-5 md:py-5 md:px-0 lg:p-5  rounded-3xl border-[#0074E5] border border-opacity-50 aspect-square flex justify-between items-center flex-col "
+                  className="cursor-pointer bg-[#061137]  w-fit p-5 md:py-5 md:px-0 lg:p-5  rounded-3xl border-[#0074E5] border border-opacity-50 aspect-square flex justify-between items-center flex-col "
                 >
                   <h1 className="text-white font-semibold text-sm sm:text-base md:text-sm lg:text-lg xl:text-xl xl:w-[80%] xl:mx-auto  tracking-[0.2em] text-center  mb-2 lg:mb-5 ">
                     {data?.name}
@@ -175,6 +247,13 @@ const FifthAndSixthSection = () => {
                 </div>
               );
             })}
+            <ModalFifthSixth
+              data={data}
+              open={open}
+              setOpen={setOpen}
+              onCloseModal={onCloseModal}
+              image={image}
+            />
           </div>
 
           {/* mobile  dashed boders */}

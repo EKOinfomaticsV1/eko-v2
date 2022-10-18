@@ -90,7 +90,7 @@ function ThirdSection() {
         },
       });
     } else {
-      setOpen(flase);
+      setOpen(false);
       setData({});
     }
   }

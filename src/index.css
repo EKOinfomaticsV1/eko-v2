@@ -141,3 +141,17 @@ path {
   /* border: 1px solid rgba(255, 255, 255, 0.25); */
   background-color: rgba(255, 255, 255, 0.25);
 }
+.clip-circle {
+  /* -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%); */
+
+  background: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+}
+.cust-grad {
+  background: linear-gradient(270deg, #1ecaff 0%, rgba(27, 43, 105, 0) 101.41%);
+}
+.cust-grad2 {
+  background: linear-gradient(270deg, #1ecaff 0%, rgba(27, 43, 105, 0) 101.41%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}

@@ -293,7 +293,7 @@ const LandingPage = () => {
       <FourthSection />
       <FifthAndSixthSection />
       <SeventhSection />
-      <EightSection />
+      {/* <EightSection /> */}
     </>
   );
 };

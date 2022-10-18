@@ -7,6 +7,7 @@ import eko_logo from "../../../assets/header/eko_logo.svg";
 import { useRecoilState } from "recoil";
 import { Nav_links_atom } from "../../../recoil/helper/nav_links/Nav_links_atom";
 import { NavHashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // global variables
@@ -27,18 +28,34 @@ const Header = () => {
           {linksData?.map((data, index) => {
             return (
               <div key={index} className="group cursor-pointer">
-                <NavHashLink
-                  to={`/#${data?.name}`}
-                  className={` ${
-                    index === 0
-                      ? "pr-6"
-                      : index === 3
-                      ? "pl-6"
-                      : "px-6 lg:px-8 xl:px-10"
-                  }    pb-2 text-xl lg:text-2xl `}
-                >
-                  {data?.name}
-                </NavHashLink>
+                {data?.name === "About Us" ? (
+                  <Link
+                    to="/about_us"
+                    className={` ${
+                      index === 0
+                        ? "pr-6"
+                        : index === 3
+                        ? "pl-6"
+                        : "px-6 lg:px-8 xl:px-10"
+                    }    pb-2 text-xl lg:text-2xl `}
+                  >
+                    {data?.name}
+                  </Link>
+                ) : (
+                  <NavHashLink
+                    to={`/#${data?.name}`}
+                    className={` ${
+                      index === 0
+                        ? "pr-6"
+                        : index === 3
+                        ? "pl-6"
+                        : "px-6 lg:px-8 xl:px-10"
+                    }    pb-2 text-xl lg:text-2xl `}
+                  >
+                    {data?.name}
+                  </NavHashLink>
+                )}
+
                 <div className="flex items-center ">
                   <div
                     className={` ${
