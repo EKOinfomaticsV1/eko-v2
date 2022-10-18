@@ -45,13 +45,13 @@ const FifthAndSixthSection = () => {
       content: "ETL/ EDW/ MDM/ AI/ ML/ BI /Reporting, NLP",
     },
     {
-      name: "DC & Cloud",
+      name: "Machine Learning",
       image: dcCloud,
       content: "CLoud, AWS, Azure, G-Cloud, On-Prem DC/DR",
     },
 
     {
-      name: "Big Data",
+      name: "Analytic Solution",
       image: bigData,
       content: "ETL/ EDW/ MDM/ AI/ ML/ BI /Reporting, NLP",
     },
@@ -81,7 +81,7 @@ const FifthAndSixthSection = () => {
                 to={{
                   pathname: "/fifth_sixth_subpage",
                 }}
-                state="AI/ML" // <-- from the array being mapped
+                state={data?.name} // <-- from the array being mapped
               >
                 View More
                 <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[2px] w-full transition-all duration-300 "></div>

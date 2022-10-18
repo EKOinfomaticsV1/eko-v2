@@ -8,6 +8,7 @@ import FifthAndSixthSection from "../components/landingPage/fifth_and_sixth_sect
 import SeventhSection from "../components/landingPage/seventh_section/SeventhSection";
 import EightSection from "../components/landingPage/eight_section/EightSection";
 import FourthSection from "../components/landingPage/fourth_section/FourthSection";
+import { Link } from "react-router-dom";
 const LandingPage = () => {
   const [indexNumber, setIndexNumber] = useState(0);
   const [activeAccordian, setActiveAccordian] = useState(0);
@@ -259,8 +260,15 @@ const LandingPage = () => {
             <div className="h-[10%]  flex justify-end gap-5 lg:gap-10 items-end">
               <div className="group relative cursor-pointer ">
                 <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-[0.1em] pb-1">
-                  <span>GET</span>{" "}
-                  <span className="font-semibold">STARTED</span>
+                  <Link
+                    to={{
+                      pathname: "/get_started",
+                    }}
+                    state="get_started"
+                  >
+                    <span>GET</span>{" "}
+                    <span className="font-semibold">STARTED</span>
+                  </Link>
                 </h1>
 
                 <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[4px] w-full transition-all duration-300"></div>
