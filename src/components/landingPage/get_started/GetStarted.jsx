@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Hamburger from "../../global/header/Hamburger";
 import Header from "../../global/header/Header";
 import Overlay from "../../global/overlay/Overlay";
 import Sidebar from "../../global/sidebar/Sidebar";
+import { useLocation } from "react-router-dom";
 
 const GetStarted = () => {
+  const routePath = useLocation();
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  };
+  useEffect(() => {
+    onTop();
+  }, [routePath]);
   return (
     <div className="bg-black">
       <div className="cursor-default font-akrobatRegular">

@@ -20,6 +20,7 @@ const ModalShow = ({
       viewBox="0 0 24 24"
       // style=" fill:#000000;"
       fill="#000000"
+      stroke="none"
     >
       <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
     </svg>
@@ -70,8 +71,12 @@ const ModalShow = ({
                 </div>
                 <div className="flex flex-col justify-center items-center w-[85%] text-sm md:text-lg">
                   <h1 className="py-8 font-semibold">Overview</h1>
-                  <p className="text-center">{data.data1}</p>
-                  <p className="text-center py-5">{data.data2}</p>
+                  <div className="text-justify md:text-center">
+                    {data.data1}
+                  </div>
+                  <div className="text-justify md:text-center py-5">
+                    {data.data2}
+                  </div>
                   {data.data3 ? (
                     <div className="flex flex-col justify-center items-start md:items-center text-justify gap-3">
                       <div className="flex justify-start items-center gap-2">

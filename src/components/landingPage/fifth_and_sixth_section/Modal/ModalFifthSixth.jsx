@@ -72,40 +72,52 @@ const ModalFifthSixth = ({
                 <div className="flex flex-col justify-center items-center w-full lg:w-[85%]">
                   {data.para1 || data.para2 ? (
                     <div className="text-sm md:text-lg">
-                      <p className="text-center">{data.para1}</p>
-                      <p className="text-center py-5">{data.para2}</p>
+                      <p className="text-justify md:text-center">
+                        {data.para1}
+                      </p>
+                      <p className="text-justify md:text-center py-5">
+                        {data.para2}
+                      </p>
                     </div>
                   ) : (
                     ""
                   )}
 
                   {data.para3 ? (
-                    <div className="flex flex-col justify-center items-center w-full lg:w-[1200px] ">
-                      <div className="flex justify-center items-center gap-2">
-                        <div>
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                    <div className="flex flex-col justify-center items-start lg:items-center w-full lg:w-[1200px] gap-3 md:gap-5 ">
+                      <div className="flex justify-center items-start  gap-5">
+                        <div className="mt-[6px] md:mt-2">
+                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
                         </div>
                         <div>{data?.para3?.l1}</div>
                       </div>
-                      <div className="flex justify-center items-center gap-2">
-                        <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                      <div className="flex justify-center items-start gap-5">
+                        <div className="mt-[6px] md:mt-2">
+                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                        </div>
                         <div>{data?.para3?.l2}</div>
                       </div>
-                      <div className="flex justify-center items-center gap-2">
-                        <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                      <div className="flex justify-center items-start  gap-5">
+                        <div className="mt-[6px] md:mt-2">
+                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                        </div>
                         <div>{data?.para3?.l3}</div>
                       </div>
                       {data?.para3?.l4 ? (
-                        <>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                        <div className="flex flex-col items-start md:items-center">
+                          <div className="flex justify-center items-start  gap-5">
+                            <div className="mt-[6px] md:mt-2">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.para3?.l4}</div>
                           </div>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                          <div className="flex justify-center items-start gap-5">
+                            <div className="mt-[6px] md:mt-2">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.para3?.l5}</div>
                           </div>
-                        </>
+                        </div>
                       ) : (
                         ""
                       )}
