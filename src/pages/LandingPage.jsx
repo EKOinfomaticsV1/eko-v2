@@ -273,7 +273,7 @@ const LandingPage = () => {
 
                 <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[4px] w-full transition-all duration-300"></div>
 
-                <div className="bg-black h-[4px] w-[50px] absolute bottom-0 right-5 group-hover:translate-x-40 transition-all duration-300"></div>
+                <div className="bg-black h-[4px] w-[25px] absolute bottom-0 right-5 group-hover:translate-x-40 transition-all duration-300"></div>
               </div>
               <img
                 src={smallScreenArrow}
@@ -293,7 +293,7 @@ const LandingPage = () => {
       <FourthSection />
       <FifthAndSixthSection />
       <SeventhSection />
-      {/* <EightSection /> */}
+      <EightSection />
     </>
   );
 };

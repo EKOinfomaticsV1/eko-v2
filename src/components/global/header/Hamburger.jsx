@@ -9,6 +9,10 @@ const Hamburger = () => {
   const [sidebarIsActive, setSidebarIsActive] =
     useRecoilState(SidebarStatusAtom);
 
+  // useEffect(() => {
+  //   console.log("Checking side bar is active", sidebarIsActive);
+  // }, [sidebarIsActive]);
+
   return (
     <div
       onClick={() => setSidebarIsActive(!sidebarIsActive)}

@@ -13,6 +13,14 @@ import { useLocation } from "react-router-dom";
 
 import AI_ML from "./AI_ML";
 const Fifth_and_sixth_subpages = () => {
+  const routePath = useLocation();
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  };
+  useEffect(() => {
+    onTop();
+  }, [routePath]);
+
   const location = useLocation();
   const selectedItem = location.state;
   console.log("USE LOCATION DATA", selectedItem);

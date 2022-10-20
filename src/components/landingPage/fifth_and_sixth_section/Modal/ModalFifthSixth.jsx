@@ -50,24 +50,27 @@ const ModalFifthSixth = ({
             overlay: "customOverlay",
             modal: "customModal",
           }}
-          // closeIcon={closeIcon}
-          showCloseIcon={false}
+          closeIcon={closeIcon}
+          showCloseIcon={true}
         >
-          <div className="bg-[#061137] border-[#0074E5] border border-opacity-50 bg-opacity-90 p-10 rounded">
+          {/* <div className="bg-[#061137] border-[#0074E5] border border-opacity-80 bg-opacity-90 p-10 rounded"> */}
+          <div className=" lg:p-10 rounded">
             <div className="flex flex-col justify-center items-center w-full">
               <div className="py-10">
-                <h1 className="text-[48px]">{data.title}</h1>
+                <h1 className="text-[28px] sm:text-3xl md:text-4xl lg:text-[48px]">
+                  {data.title}
+                </h1>
               </div>
               <div className="mb-8">
                 <img
                   src={image}
                   alt="Retail"
-                  className="w-sm md:w-md lg:w-[20rem]"
+                  className="w-[10rem] sm:w-[12rem] md:w-[15rem] lg:w-[20rem]"
                 />
               </div>
-              <div className="flex flex-col justify-center items-center w-[85%]">
+              <div className="flex flex-col justify-center items-center w-full lg:w-[85%]">
                 {data.para1 || data.para2 ? (
-                  <div>
+                  <div className="text-sm md:text-lg">
                     <p className="text-center">{data.para1}</p>
                     <p className="text-center py-5">{data.para2}</p>
                   </div>
@@ -76,7 +79,7 @@ const ModalFifthSixth = ({
                 )}
 
                 {data.para3 ? (
-                  <div className="flex flex-col justify-center items-center w-[1200px]">
+                  <div className="flex flex-col justify-center items-center w-full lg:w-[1200px] ">
                     <div className="flex justify-center items-center gap-2">
                       <div>
                         <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>

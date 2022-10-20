@@ -80,20 +80,25 @@ const FifthAndSixthSection = () => {
           <p className="text-gray-500 text-xs md:text-sm xl:text-md w-[80%] xl:w-[60%] mx-auto mt-2 pb-4 md:pb-6 xl:pb-8">
             {data?.content}
           </p>
-          <div className="text-[12px] md:text-[12px]  xl:text-sm capitalize font-semibold tracking-widest py-5">
-            <div className="group relative cursor-pointer  flex flex-col justify-center items-center">
+
+          <div className="h-[10%]  flex justify-center gap-5 lg:gap-10 items-center overflow-hidden pb-10">
+            <div className="group relative cursor-pointer ">
               <Link
-                className="tracking-[0.1em] pb-1"
-                // to="/fifth_sixth_subpage"
+                className="text-sm md:text-[12px] xl:text-lg tracking-[0.1em] pb-1"
                 to={{
                   pathname: "/fifth_sixth_subpage",
                 }}
-                state={data?.name} // <-- from the array being mapped
+                state={data.name}
               >
                 View More
-                <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[2px] w-full transition-all duration-300 "></div>
-                <div className="bg-white h-[4px] w-[20px] absolute bottom-0 right-5 group-hover:translate-x-5 transition-all duration-300"></div>
               </Link>
+              {/* <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-[0.1em] pb-1">
+            <span>GET</span> <span className="font-semibold">STARTED</span>
+          </h1> */}
+
+              <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[1px]  lg:h-[2px] w-full transition-all duration-300"></div>
+
+              <div className="bg-[#EAFAFF] h-[1px]  lg:h-[2px] w-[8px] absolute bottom-0 right-3 group-hover:translate-x-40 transition-all duration-300"></div>
             </div>
           </div>
         </div>

@@ -108,14 +108,21 @@
   animation-fill-mode: forwards !important;
 }
 .customModal {
-  /* background: rgba(2, 16, 71, 0.52); */
-  background: transparent;
-  /* border: 1px solid #061137; */
+  background: rgb(5 16 54);
+  /* background: transparent; */
+  border: 1px solid #0074e5;
+
   animation-fill-mode: forwards !important;
-  /* opacity: 0.8; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  opacity: 0.9 !important;
+  /* border: none !important; */
   color: white;
   width: 100wh;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.react-responsive-modal-modal {
+  max-width: 1000px !important;
 }
 
 .react-responsive-modal-closeButton {
@@ -154,4 +161,44 @@ path {
 .cust-grad2 {
   background: linear-gradient(270deg, #1ecaff 0%, rgba(27, 43, 105, 0) 101.41%);
   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* @media (min-width: 300px) {
+  .customModal {
+    background: transparent;
+    animation-fill-mode: forwards !important;
+    max-width: 100%;
+    color: white;
+    width: 100wh;
+  }
+} */
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .dashline {
+    /* border: 1px solid white; */
+    margin: 5px 0;
+    height: 2px;
+
+    background: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 10px,
+      #0074e5 10px,
+      #0074e5 20px
+    );
+    /*10px transparent then 10px black -> repeat this!*/
+  }
 }

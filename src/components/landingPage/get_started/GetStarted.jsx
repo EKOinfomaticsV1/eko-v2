@@ -38,7 +38,7 @@ const GetStarted = () => {
               </p>
 
               <div>
-                <form action="">
+                <form action="" className="font-gillSans">
                   <input
                     className="placeholder:text-[#575757] bg-black border-b-[#575757] outline-none border-b text-xl w-full py-5 pb-2 focus:border-b-[#a0a0a0] focus:placeholder:text-[#a0a0a0] mb-8"
                     type="text"

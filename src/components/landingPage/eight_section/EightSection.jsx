@@ -58,7 +58,7 @@ const EightSection = () => {
           <div className="w-[90%] md:min-h-[550px] mx-auto bg-[#EAFAFF] ">
             <img src={case1} alt="case-1" className="mx-auto w-full" />
             <div className="p-8 ">
-              <h1 className="text-[ #010101] text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wider  mx-auto my-5 mb-10">
+              <h1 className="text-[ #010101] text-3xl md:text-4xl lg:text-4xl font-semibold tracking-wider  mx-auto my-5 mb-10">
                 FRAUD DETECTION
               </h1>
               <p className="text-[#5C5C5C] font-gillSans md:text-lg lg:text-xl  pb-10">
@@ -66,34 +66,94 @@ const EightSection = () => {
                 patterns, and flag fraudulent transactions as they happen in
                 real-time.
               </p>
+              <div className="h-[10%]  flex justify-center gap-5 lg:gap-10 items-center overflow-hidden">
+                <div className="group relative cursor-pointer ">
+                  <Link
+                    className="text-sm md:text-lg xl:text-2xl tracking-[0.1em] pb-1 font-semibold font-gillSans"
+                    to={{
+                      pathname: "/case_study",
+                    }}
+                    state="fraud detection"
+                  >
+                    View More
+                  </Link>
+                  {/* <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-[0.1em] pb-1">
+            <span>GET</span> <span className="font-semibold">STARTED</span>
+          </h1> */}
+
+                  <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[3px] w-full transition-all duration-300"></div>
+
+                  <div className="bg-[#EAFAFF] h-[3px] w-[8px] absolute bottom-0 right-4 group-hover:translate-x-40 transition-all duration-300"></div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="w-[90%] md:min-h-[550px] mx-auto bg-[#EAFAFF] ">
             <img src={case2} alt="case-1" className="mx-auto w-full" />
             <div className="p-8 ">
-              <h1 className="text-[ #010101] text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wider  mx-auto my-5 mb-10">
+              <h1 className="text-[ #010101] text-3xl md:text-4xl lg:text-4xl font-semibold tracking-wider  mx-auto my-5 mb-10">
                 CUSTOMER CHURN PREDICTION
               </h1>
-              {/* <p className="text-[#5C5C5C] font-gillSans md:text-lg lg:text-xl  pb-10">
+              <p className="text-[#5C5C5C] font-gillSans md:text-lg lg:text-xl  pb-10">
                 Leverage AI to analyze massive data sets, better identify fraud
                 patterns, and flag fraudulent transactions as they happen in
                 real-time.
-              </p> */}
+              </p>
+              <div className="h-[10%]  flex justify-center gap-5 lg:gap-10 items-center overflow-hidden">
+                <div className="group relative cursor-pointer ">
+                  <Link
+                    className="text-sm md:text-lg xl:text-2xl tracking-[0.1em] pb-1 font-semibold font-gillSans"
+                    to={{
+                      pathname: "/case_study",
+                    }}
+                    state="customer churn prediction"
+                  >
+                    View More
+                  </Link>
+                  {/* <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-[0.1em] pb-1">
+            <span>GET</span> <span className="font-semibold">STARTED</span>
+          </h1> */}
+
+                  <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[3px] w-full transition-all duration-300"></div>
+
+                  <div className="bg-[#EAFAFF] h-[3px] w-[8px] absolute bottom-0 right-4 group-hover:translate-x-40 transition-all duration-300"></div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="w-[90%] md:min-h-[550px] mx-auto bg-[#EAFAFF] ">
             <img src={case3} alt="case-1" className="mx-auto w-full" />
             <div className="p-8 ">
-              <h1 className="text-[ #010101] text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wider  mx-auto my-5 mb-10">
+              <h1 className="text-[ #010101] text-3xl md:text-4xl lg:text-4xl font-semibold tracking-wider  mx-auto my-5 mb-10">
                 CREDIT RISK SCORING
               </h1>
-              <p className="text-[#5C5C5C] font-gillSans md:text-lg lg:text-xl  pb-65">
+              <p className="text-[#5C5C5C] font-gillSans md:text-lg lg:text-xl  pb-10">
                 Leverage AI to analyze massive data sets, better identify fraud
                 patterns, and flag fraudulent transactions as they happen in
                 real-time.
               </p>
+              <div className="h-[10%]  flex justify-center gap-5 lg:gap-10 items-center overflow-hidden">
+                <div className="group relative cursor-pointer ">
+                  <Link
+                    className="text-sm md:text-lg xl:text-2xl tracking-[0.1em] pb-1 font-semibold font-gillSans"
+                    to={{
+                      pathname: "/case_study",
+                    }}
+                    state="credit risk scoring"
+                  >
+                    View More
+                  </Link>
+                  {/* <h1 className="text-2xl xl:text-3xl 2xl:text-4xl tracking-[0.1em] pb-1">
+            <span>GET</span> <span className="font-semibold">STARTED</span>
+          </h1> */}
+
+                  <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[3px] w-full transition-all duration-300"></div>
+
+                  <div className="bg-[#EAFAFF] h-[3px] w-[8px] absolute bottom-0 right-4 group-hover:translate-x-40 transition-all duration-300"></div>
+                </div>
+              </div>
             </div>
           </div>
         </AliceCarousel>
@@ -116,7 +176,7 @@ const EightSection = () => {
 
           <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[4px] w-full transition-all duration-300"></div>
 
-          <div className="bg-[#EAFAFF] h-[4px] w-[50px] absolute bottom-0 right-5 group-hover:translate-x-40 transition-all duration-300"></div>
+          <div className="bg-[#EAFAFF] h-[4px] w-[20px] absolute bottom-0 right-5 group-hover:translate-x-40 transition-all duration-300"></div>
         </div>
         <img
           src={smallScreenArrow}

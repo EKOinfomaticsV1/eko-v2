@@ -14,19 +14,19 @@ const AI_ML = ({ title, paragraph, image }) => {
         <div className="w-full bg-black text-white py-5">
           <div className="flex flex-col items-center justify-center gap-5 mt-[5rem] text-[#FFFFFF] ">
             <div className="w-[85%] flex-1">
-              <h1 className="uppercase text-center sm:text-left md:text-left text-2xl sm:text-2xl lg:text-6xl font-semibold tracking-widest font-akrobatRegular pb-5">
+              <h1 className="uppercase text-center sm:text-left md:text-left text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-widest font-akrobatRegular pb-5">
                 {title}
               </h1>
               <div className="line h-1 w-[50%] sm:w-[80%] md:w-[80%] float-right"></div>
             </div>
 
-            <div className="flex flex-col-reverse md:flex-row lg:flex-row  justify-center items-center w-[70%] gap-10 flex-1 ">
+            <div className="flex flex-col-reverse lg:flex-row  justify-center items-center w-[70%] gap-5 md:gap-8 lg:gap-10 flex-1 ">
               <div
                 className={`${
                   title === "machine learning"
-                    ? "flex flex-col gap-10 mt-[5rem] font-gillSans text-xl flex-[0.7] "
-                    : "flex flex-col gap-10 mt-[5rem] font-gillSans text-xl flex-1 "
-                }`}
+                    ? "flex flex-col gap-2 md:gap-5 sm:gap-5 lg:gap-10 mt-[1rem] md:mt-[2rem] lg:mt-[5rem]  font-gillSans  flex-[0.7] text-justify md:text-left"
+                    : "flex flex-col gap-2 md:gap-5 sm:gap-5 lg:gap-10 mt-[1rem] md:mt-[2rem] lg:mt-[5rem]  font-gillSans  flex-1 text-justify md:text-left"
+                }text-lg sm:text-lg md:text-[16px] lg:text-[18px] xl:text-[20px]`}
               >
                 <h1>Overview</h1>
                 <p>{paragraph?.para1}</p>
@@ -89,7 +89,13 @@ const AI_ML = ({ title, paragraph, image }) => {
                 </p>
               </div>
               <div className="flex-1">
-                <img src={image} alt={title} className="w-full" />
+                <div className="flex justify-center items-center md:mt-[3rem] lg:mt-[5rem]">
+                  <img
+                    src={image}
+                    alt={title}
+                    className="w-full max-w-[16rem] md:max-w-[20rem] lg:max-w-[30rem] lg:scale-[1.3]"
+                  />
+                </div>
               </div>
             </div>
           </div>

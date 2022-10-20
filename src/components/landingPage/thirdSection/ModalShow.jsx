@@ -50,22 +50,24 @@ const ModalShow = ({
             overlay: "customOverlay",
             modal: "customModal",
           }}
-          // closeIcon={closeIcon}
-          showCloseIcon={false}
+          closeIcon={closeIcon}
+          showCloseIcon={true}
         >
-          <div className="bg-[#061137] border-[#0074E5] border border-opacity-50 bg-opacity-90 p-10 rounded">
+          <div className="  rounded">
             <div className="flex flex-col justify-center items-center w-full">
               <div className="py-10">
-                <h1 className="text-[48px]">{data.name}</h1>
+                <h1 className="text-[28px] sm:text-3xl md:text-4xl lg:text-[48px]">
+                  {data.name}
+                </h1>
               </div>
               <div>
                 <img
                   src={image}
                   alt="Retail"
-                  className="w-sm md:w-md lg:w-[20rem]"
+                  className="w-[10rem] sm:w-[12rem] md:w-[15rem] lg:w-[20rem]"
                 />
               </div>
-              <div className="flex flex-col justify-center items-center w-[85%]">
+              <div className="flex flex-col justify-center items-center w-[85%] text-sm md:text-lg">
                 <h1 className="py-8 font-semibold">Overview</h1>
                 <p className="text-center">{data.data1}</p>
                 <p className="text-center py-5">{data.data2}</p>
