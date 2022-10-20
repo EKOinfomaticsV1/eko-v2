@@ -3,6 +3,7 @@ import video from "../../../assets/second_section/second_video.mp4";
 import AIvideo from "../../../assets/second_section/AIvideo.mp4";
 import playButton from "../../../assets/second_section/play.svg";
 import pauseButton from "../../../assets/second_section/pause.svg";
+import { Link } from "react-router-dom";
 
 const SecondSection = () => {
   const [controlIs, setControlIs] = useState(false);
@@ -55,6 +56,23 @@ const SecondSection = () => {
             as Healthcare, entertainment, finance, education, etc. AI is making
             our daily life more comfortable and fast.
           </p>
+          <div className="h-[10%]  flex justify-center gap-5 lg:gap-10 items-end overflow-hidden mt-20 md:mt-[14rem]">
+            <div className="group relative cursor-pointer ">
+              <Link
+                className="text-sm md:text-[12px] xl:text-lg tracking-[0.1em] pb-1 font-semibold font-gillSans"
+                to={{
+                  pathname: "/fifth_sixth_subpage",
+                }}
+                state="AI & ML"
+              >
+                View More
+              </Link>
+
+              <div className="bg-[#0074E5] group-hover:bg-gradient-to-r from-[#0085FE] to-[#29E5FF] h-[1px]  lg:h-[2px] w-full transition-all duration-300"></div>
+
+              <div className="bg-[#EAFAFF] h-[1px]  lg:h-[2px] w-[8px] absolute bottom-0 right-3 group-hover:translate-x-40 transition-all duration-300"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
