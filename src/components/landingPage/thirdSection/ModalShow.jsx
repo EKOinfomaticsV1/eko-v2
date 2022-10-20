@@ -41,94 +41,96 @@ const ModalShow = ({
     <>
       {/* <div className="bg-black"> */}
       <div className="">
-        <Modal
-          open={open}
-          onClose={onCloseModal}
-          hideModalContentWhileAnimating={true}
-          center
-          classNames={{
-            overlay: "customOverlay",
-            modal: "customModal",
-          }}
-          closeIcon={closeIcon}
-          showCloseIcon={true}
-        >
-          <div className="  rounded">
-            <div className="flex flex-col justify-center items-center w-full">
-              <div className="py-10">
-                <h1 className="text-[28px] sm:text-3xl md:text-4xl lg:text-[48px]">
-                  {data.name}
-                </h1>
-              </div>
-              <div>
-                <img
-                  src={image}
-                  alt="Retail"
-                  className="w-[10rem] sm:w-[12rem] md:w-[15rem] lg:w-[20rem]"
-                />
-              </div>
-              <div className="flex flex-col justify-center items-center w-[85%] text-sm md:text-lg">
-                <h1 className="py-8 font-semibold">Overview</h1>
-                <p className="text-center">{data.data1}</p>
-                <p className="text-center py-5">{data.data2}</p>
-                {data.data3 ? (
-                  <div className="flex flex-col justify-center items-center">
-                    <div className="flex justify-center items-center gap-2">
-                      <div>
-                        <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+        {open && (
+          <Modal
+            open={open}
+            onClose={onCloseModal}
+            hideModalContentWhileAnimating={true}
+            center
+            classNames={{
+              overlay: "customOverlay",
+              modal: "customModal",
+            }}
+            closeIcon={closeIcon}
+            showCloseIcon={true}
+          >
+            <div className="  rounded">
+              <div className="flex flex-col justify-center items-center w-full">
+                <div className="py-10">
+                  <h1 className="text-[28px] sm:text-3xl md:text-4xl lg:text-[48px]">
+                    {data.name}
+                  </h1>
+                </div>
+                <div>
+                  <img
+                    src={image}
+                    alt="Retail"
+                    className="w-[10rem] sm:w-[12rem] md:w-[15rem] lg:w-[20rem]"
+                  />
+                </div>
+                <div className="flex flex-col justify-center items-center w-[85%] text-sm md:text-lg">
+                  <h1 className="py-8 font-semibold">Overview</h1>
+                  <p className="text-center">{data.data1}</p>
+                  <p className="text-center py-5">{data.data2}</p>
+                  {data.data3 ? (
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="flex justify-center items-center gap-2">
+                        <div>
+                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                        </div>
+                        <div>{data?.data3?.l1}</div>
                       </div>
-                      <div>{data?.data3?.l1}</div>
+                      <div className="flex justify-center items-center gap-2">
+                        <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                        <div>{data?.data3?.l2}</div>
+                      </div>
+                      <div className="flex justify-center items-center gap-2">
+                        <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                        <div>{data?.data3?.l3}</div>
+                      </div>
+                      {data?.data3?.l4 ? (
+                        <>
+                          <div className="flex justify-center items-center gap-2">
+                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                            <div>{data?.data3?.l4}</div>
+                          </div>
+                          <div className="flex justify-center items-center gap-2">
+                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                            <div>{data?.data3?.l5}</div>
+                          </div>
+                          <div className="flex justify-center items-center gap-2">
+                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                            <div>{data?.data3?.l6}</div>
+                          </div>
+                          <div className="flex justify-center items-center gap-2">
+                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                            <div>{data?.data3?.l7}</div>
+                          </div>
+                          <div className="flex justify-center items-center gap-2">
+                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                            <div>{data?.data3?.l8}</div>
+                          </div>
+                          <div className="flex justify-center items-center gap-2">
+                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                            <div>{data?.data3?.l9}</div>
+                          </div>
+                          <div className="flex justify-center items-center gap-2">
+                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                            <div>{data?.data3?.l10}</div>
+                          </div>
+                        </>
+                      ) : (
+                        ""
+                      )}
                     </div>
-                    <div className="flex justify-center items-center gap-2">
-                      <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                      <div>{data?.data3?.l2}</div>
-                    </div>
-                    <div className="flex justify-center items-center gap-2">
-                      <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                      <div>{data?.data3?.l3}</div>
-                    </div>
-                    {data?.data3?.l4 ? (
-                      <>
-                        <div className="flex justify-center items-center gap-2">
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                          <div>{data?.data3?.l4}</div>
-                        </div>
-                        <div className="flex justify-center items-center gap-2">
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                          <div>{data?.data3?.l5}</div>
-                        </div>
-                        <div className="flex justify-center items-center gap-2">
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                          <div>{data?.data3?.l6}</div>
-                        </div>
-                        <div className="flex justify-center items-center gap-2">
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                          <div>{data?.data3?.l7}</div>
-                        </div>
-                        <div className="flex justify-center items-center gap-2">
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                          <div>{data?.data3?.l8}</div>
-                        </div>
-                        <div className="flex justify-center items-center gap-2">
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                          <div>{data?.data3?.l9}</div>
-                        </div>
-                        <div className="flex justify-center items-center gap-2">
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
-                          <div>{data?.data3?.l10}</div>
-                        </div>
-                      </>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                ) : (
-                  ""
-                )}
+                  ) : (
+                    ""
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-        </Modal>
+          </Modal>
+        )}
       </div>
     </>
   );

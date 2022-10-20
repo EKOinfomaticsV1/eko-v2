@@ -135,6 +135,11 @@
   background-color: transparent;
   display: flex;
 }
+.react-responsive-modal-overlay,
+.react-responsive-modal-container,
+.react-responsive-modal-modal {
+  animation-fill-mode: forwards !important;
+}
 svg {
   margin: 1rem;
   border: none;
