@@ -73,49 +73,67 @@ const ModalShow = ({
                   <p className="text-center">{data.data1}</p>
                   <p className="text-center py-5">{data.data2}</p>
                   {data.data3 ? (
-                    <div className="flex flex-col justify-center items-center">
-                      <div className="flex justify-center items-center gap-2">
-                        <div>
-                          <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                    <div className="flex flex-col justify-center items-start md:items-center text-justify gap-3">
+                      <div className="flex justify-start items-center gap-2">
+                        <div className="mt-[2px] md:mt-0">
+                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
                         </div>
                         <div>{data?.data3?.l1}</div>
                       </div>
-                      <div className="flex justify-center items-center gap-2">
-                        <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                      <div className="flex justify-center md:items-center items-start gap-2">
+                        <div className="mt-[6px] md:mt-0">
+                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                        </div>
                         <div>{data?.data3?.l2}</div>
                       </div>
-                      <div className="flex justify-center items-center gap-2">
-                        <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                      <div className="flex justify-center md:items-center items-start gap-2">
+                        <div className="mt-[6px] md:mt-[-2rem]">
+                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                        </div>
                         <div>{data?.data3?.l3}</div>
                       </div>
                       {data?.data3?.l4 ? (
                         <>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                          <div className="flex justify-center  md:items-center items-start gap-2">
+                            <div className="mt-[6px] md:mt-0">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.data3?.l4}</div>
                           </div>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                          <div className="flex justify-center md:items-center items-start gap-2">
+                            <div className="mt-[6px] md:mt-0">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.data3?.l5}</div>
                           </div>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                          <div className="flex justify-center md:items-center items-start gap-2">
+                            <div className="mt-[6px] md:mt-0">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.data3?.l6}</div>
                           </div>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                          <div className="flex justify-center md:items-center items-start gap-2">
+                            <div className="mt-[6px] md:mt-0">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.data3?.l7}</div>
                           </div>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                          <div className="flex justify-center  md:items-center items-start gap-2">
+                            <div className="mt-[6px] md:mt-0">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.data3?.l8}</div>
                           </div>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                          <div className="flex justify-center  md:items-center items-start gap-2">
+                            <div className="mt-[6px] md:mt-0">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.data3?.l9}</div>
                           </div>
-                          <div className="flex justify-center items-center gap-2">
-                            <div className="w-[0.5rem] h-[0.5rem] bg-white rounded"></div>
+                          <div className="flex justify-center md:items-center items-start gap-2">
+                            <div className="mt-[6px] md:mt-0">
+                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                            </div>
                             <div>{data?.data3?.l10}</div>
                           </div>
                         </>

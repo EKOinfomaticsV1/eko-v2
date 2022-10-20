@@ -108,14 +108,17 @@
   animation-fill-mode: forwards !important;
 }
 .customModal {
-  background: rgb(5 16 54);
-  /* background: transparent; */
+  /* background: rgb(5 16 54); */
+
   border: 1px solid #0074e5;
+  background: rgba(2, 16, 71, 0.52);
+
+  backdrop-filter: blur(6px);
 
   animation-fill-mode: forwards !important;
-  /* max-width: 1200px; */
-  opacity: 0.9 !important;
-  /* border: none !important; */
+
+  opacity: 0.8 !important;
+
   color: white;
   width: 100wh;
   overflow: hidden;
@@ -173,13 +176,14 @@ path {
     animation-fill-mode: forwards !important;
   }
   .customModal {
-    background: rgb(5 16 54);
-
     border: 1px solid #0074e5;
+    background: rgba(2, 16, 71, 0.52);
+
+    backdrop-filter: blur(6px);
 
     animation-fill-mode: forwards !important;
 
-    opacity: 0.9 !important;
+    opacity: 0.8 !important;
 
     color: white;
     width: 100wh;
@@ -192,13 +196,13 @@ path {
     animation-fill-mode: forwards !important;
   }
   .customModal {
-    background: rgb(5 16 54);
-
-    border: 1px solid #0074e5;
+    border: 2px solid #0074e5;
+    background: rgba(2, 16, 71, 0.52);
+    backdrop-filter: blur(6px);
 
     animation-fill-mode: forwards !important;
 
-    opacity: 0.9 !important;
+    opacity: 0.8 !important;
 
     color: white;
     width: 100wh;
@@ -211,13 +215,13 @@ path {
     animation-fill-mode: forwards !important;
   }
   .customModal {
-    background: rgb(5 16 54);
-
-    border: 1px solid #0074e5;
+    border: 2px solid #0074e5;
+    background: rgba(2, 16, 71, 0.52);
+    backdrop-filter: blur(6px);
 
     animation-fill-mode: forwards !important;
 
-    opacity: 0.9 !important;
+    opacity: 0.8 !important;
 
     color: white;
     width: 100wh;
@@ -231,13 +235,14 @@ path {
     animation-fill-mode: forwards !important;
   }
   .customModal {
-    background: rgb(5 16 54);
-
-    border: 1px solid #0074e5;
+    border: 2px solid #0074e5;
+    background: rgba(2, 16, 71, 0.52);
+    /* border: 2px solid rgba(0, 116, 229, 0.5); */
+    backdrop-filter: blur(6px);
 
     animation-fill-mode: forwards !important;
 
-    opacity: 0.9 !important;
+    opacity: 0.8 !important;
 
     color: white;
     width: 100wh;
