@@ -15,9 +15,9 @@ const GetStarted = () => {
     onTop();
   }, [routePath]);
   return (
-    <div className="bg-black">
+    <div className="bg-black fade-in-text">
       <div className="cursor-default font-akrobatRegular">
-        <div className="h-[20px] w-full bg-red-500"></div>
+        <div className="h-[20px] w-full "></div>
 
         <Overlay />
         <Sidebar />

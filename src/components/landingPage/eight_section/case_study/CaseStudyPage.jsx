@@ -128,10 +128,10 @@ const CaseStudyPage = () => {
                   <p>{caseSelectedData?.text?.para1}</p>
                 </div>
               </div>
-              <div className="flex flex-row justify-start w-[90%] items-center  gap-5 lg:gap-10 font-gillSans text-sm md:text-lg lg:text-2xl ">
+              <div className="flex flex-row justify-start w-[90%] items-center   gap-5 lg:gap-10 font-gillSans text-sm md:text-lg lg:text-2xl ">
                 <div>
                   <img
-                    src={caseSelectedData?.icon3}
+                    src={caseSelectedData?.icon2}
                     alt=""
                     className="w-[3rem]"
                   />

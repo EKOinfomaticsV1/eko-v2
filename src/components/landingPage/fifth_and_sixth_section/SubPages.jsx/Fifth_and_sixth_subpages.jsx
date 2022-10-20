@@ -90,7 +90,7 @@ const Fifth_and_sixth_subpages = () => {
     <div className="bg-black">
       {/* <div className="h-[20px] w-full bg-black"></div> */}
       <div className="cursor-default font-akrobatRegular">
-        <div className="h-[20px] w-full bg-red-500"></div>
+        <div className="h-[20px] w-full"></div>
 
         <Overlay />
         <Sidebar />

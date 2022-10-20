@@ -17,7 +17,7 @@ const SecondSection = () => {
   }, [controlIs]);
 
   return (
-    <div className=" py-10 sm:py-0 w-full ">
+    <div className="py-10 sm:py-0 w-full ">
       <h1 className="text-center font-semibold tracking-[0.06em] text-2xl sm:hidden">
         Application of AI
       </h1>

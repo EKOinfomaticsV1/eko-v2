@@ -14,7 +14,7 @@ const Header = () => {
   const [linksData] = useRecoilState(Nav_links_atom);
 
   return (
-    <header className=" bg-black  fixed top-0 left-0 right-0 z-40 ">
+    <header className=" bg-black  fixed top-0 left-0 right-0 z-40 fade-in-text">
       <div className="flex justify-between  pt-10 pb-5 w-[90%] mx-auto">
         <NavHashLink to="/#">
           <img

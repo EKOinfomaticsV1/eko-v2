@@ -97,7 +97,7 @@ function ThirdSection() {
 
   return (
     <section
-      className="bg-black py-20 text-white overflow-hidden"
+      className="bg-black py-20 text-white overflow-hidden "
       id="Industries"
     >
       <div className=" text-right text-3xl  text-white px-5 mb-14 md:mb-20 font-semibold tracking-widest md:text-3xl  lg:text-7xl ">

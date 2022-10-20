@@ -31,7 +31,7 @@ const LandingPage = () => {
     {
       question: "Who are we?",
       content: (
-        <div className="absolute top-0 bottom-0 right-0 left-0 p-5  flex justify-center items-end  font-gillSans text-[#9D9D9D] font-normal text-sm lg:text-lg xl:text-xl 2xl:text-2xl tracking-[1px] leading-[30px] z-[10] ">
+        <div className=" absolute top-0 bottom-0 right-0 left-0 p-5  flex justify-center items-end  font-gillSans text-[#9D9D9D] font-normal text-sm lg:text-lg xl:text-xl 2xl:text-2xl tracking-[1px] leading-[30px] z-[10] ">
           <p className="xl:w-[80%] 2xl:w-[60%] mr-auto">
             We are a firm specialized in
             <span className="font-semibold text-white text-base lg:text-xl xl:text-2xl 2xl:text-3xl">
@@ -56,7 +56,7 @@ const LandingPage = () => {
     {
       question: "What we do?",
       content: (
-        <div className="absolute top-0 bottom-0 right-0 left-0 p-5  flex justify-center items-end  font-gillSans text-[#9D9D9D] font-normal  tracking-[1px] leading-[30px] z-[10] ">
+        <div className=" absolute top-0 bottom-0 right-0 left-0 p-5  flex justify-center items-end  font-gillSans text-[#9D9D9D] font-normal  tracking-[1px] leading-[30px] z-[10] ">
           <div className="flex items-end gap-2 w-full xl:w-[80%] 2xl:w-[60%] mr-auto">
             <div className="w-full ">
               <h1 className="text-white font-semibold text-base lg:text-xl xl:text-2xl 2xl:text-3xl ">
@@ -82,7 +82,7 @@ const LandingPage = () => {
     {
       question: "We have delivered ",
       content: (
-        <div className="absolute top-0 bottom-0 right-0 left-0 p-5  flex justify-center items-end  font-gillSans text-[#9D9D9D] font-normal  tracking-[1px] leading-[30px] z-[10] ">
+        <div className=" absolute top-0 bottom-0 right-0 left-0 p-5  flex justify-center items-end  font-gillSans text-[#9D9D9D] font-normal  tracking-[1px] leading-[30px] z-[10] ">
           <div className="flex items-end gap-2 w-full">
             <div className="w-full ">
               <h1 className="text-white font-semibold  text-base lg:text-xl xl:text-2xl 2xl:text-3xl">

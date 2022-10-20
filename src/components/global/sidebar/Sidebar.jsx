@@ -20,7 +20,7 @@ const Sidebar = () => {
     <aside
       className={` ${
         sidebarIsActive ? "w-[70%] md:hidden  ease-in" : "w-[0%] ease-out"
-      } bg-white max-w-[999px] text-black transition-all duration-200  fixed right-0 top-0 bottom-0 z-[45] overflow-hidden `}
+      } bg-white max-w-[999px] text-black transition-all duration-200  fixed right-0 top-0 bottom-0 z-[45] overflow-hidden`}
     >
       <div
         className="h-[60vh] pt-32 mx-auto text-right flex flex-col justify-around "

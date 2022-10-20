@@ -115,7 +115,7 @@ const SeventhSection = () => {
           key={data?.name}
           onDragStart={handleDragStart}
           role="presentation"
-          className="mx-5 grayscale hover:grayscale-0 transition-all duration-300"
+          className="mx-5 grayscale hover:grayscale-0 transition-all duration-300 "
         >
           <img
             src={data?.image}

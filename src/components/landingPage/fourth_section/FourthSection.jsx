@@ -5,7 +5,7 @@ import fourthSectionImg from "../../../assets/fourth_section/fourth.svg";
 
 const FourthSection = () => {
   return (
-    <section className="bg-black py-20 tracking-widest leading-relaxed">
+    <section className="bg-black py-20 tracking-widest leading-relaxed ">
       <div className="w-[95%] ml-auto flex justify-between items-end sm:items-center ">
         <div className="text-white flex-1 sm:flex-[0.6]">
           <h1 className="text-xl sm:text-2xl md:text-4xl xl:text-5xl">

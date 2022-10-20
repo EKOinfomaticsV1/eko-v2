@@ -31,7 +31,7 @@ const EightSection = () => {
   };
 
   return (
-    <section className="bg-[#F5FEFF] py-10 md:pt-16 lg:pt-24 md:pb-28">
+    <section className="bg-[#F5FEFF] py-10 md:pt-16 lg:pt-24 md:pb-28 ">
       <div className="w-[80%] mx-auto text-center">
         <h1 className="text-[ #010101] text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wider  mx-auto">
           Our Solved Cases

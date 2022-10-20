@@ -9,8 +9,8 @@ import LandingPage from "../pages/LandingPage";
 
 const Home = () => {
   return (
-    <div className="cursor-default font-akrobatRegular">
-      <div className="h-[20px] w-full bg-red-500"></div>
+    <div className="cursor-default font-akrobatRegular ">
+      <div className="h-[20px] w-full "></div>
       <Overlay />
       <Sidebar />
       <Hamburger />
