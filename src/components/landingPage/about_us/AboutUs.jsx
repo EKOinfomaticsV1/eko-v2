@@ -18,16 +18,16 @@ const AboutUs = () => {
     <div className="bg-black">
       {/* <div className="h-[20px] w-full bg-black"></div> */}
       <div className="cursor-default font-akrobatRegular">
-        <div className="h-[20px] w-full bg-red-500"></div>
+        <div className="h-[20px] w-ful"></div>
 
         <Overlay />
         <Sidebar />
         <Hamburger />
         <Header />
-        <div className="pt-20"></div>
+        <div className="md:pt-10 lg:pt-20"></div>
         <div className="h-screen text-white pt-2">
           <div className="flex justify-center items-center">
-            <div className="w-full bg-black text-white py-5">
+            <div className="w-full bg-black text-white py-2 md:my-0">
               <div className="flex flex-col items-center justify-center gap-5 mt-[5rem] text-[#FFFFFF] ">
                 <div className="w-[85%] flex-1">
                   <h1 className="uppercase text-center sm:text-left md:text-left text-2xl sm:text-2xl lg:text-6xl font-semibold tracking-widest font-akrobatRegular pb-5">

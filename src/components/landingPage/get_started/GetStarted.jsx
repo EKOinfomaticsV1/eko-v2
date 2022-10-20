@@ -23,10 +23,10 @@ const GetStarted = () => {
         <Sidebar />
         <Hamburger />
         <Header />
-        <div className="pt-20"></div>
+        <div className="md:pt-10 lg:pt-20"></div>
 
         <div className="text-white pt-6">
-          <div className="flex flex-col justify-center items-center my-5 md:my-0 ">
+          <div className="flex flex-col justify-center items-center py-2 md:my-0 ">
             <div className="w-[65%] text-center ">
               <h1 className="uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold font-akrobatRegular">
                 <span>we work to provide</span>

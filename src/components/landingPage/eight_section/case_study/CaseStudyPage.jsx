@@ -101,9 +101,9 @@ const CaseStudyPage = () => {
         <Sidebar />
         <Hamburger />
         <Header />
-        <div className="pt-20"></div>
-        <section className="h-[92vh] pt-2">
-          <div className="w-full bg-black text-white py-5">
+        <div className="md:pt-10 lg:pt-20"></div>
+        <section className="md:h-[92vh] pt-2">
+          <div className="w-full bg-black text-white py-2 md:py-5">
             <div className="flex flex-col items-center justify-center gap-5 mt-[5rem] text-[#FFFFFF] ">
               <div className="w-[85%] flex-1 ">
                 <h1 className="w-[100%] md:w-[70%] uppercase text-left sm:text-left md:text-left text-xl sm:text-2xl lg:text-4xl xl:text-5xl font-semibold tracking-widest font-akrobatRegular pb-5">

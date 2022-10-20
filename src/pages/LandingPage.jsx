@@ -233,11 +233,18 @@ const LandingPage = () => {
 
                 {/* right top arrow before sm */}
                 <div>
-                  <img
-                    src={smallScreenArrow}
-                    alt="..."
-                    className="absolute bottom-0 right-0 py-2 sm:hidden"
-                  />
+                  <Link
+                    to={{
+                      pathname: "/get_started",
+                    }}
+                    state="get_started"
+                  >
+                    <img
+                      src={smallScreenArrow}
+                      alt="..."
+                      className="absolute bottom-0 right-0 py-2 sm:hidden"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -275,11 +282,18 @@ const LandingPage = () => {
 
                 <div className="bg-black h-[4px] w-[25px] absolute bottom-0 right-5 group-hover:translate-x-40 transition-all duration-300"></div>
               </div>
-              <img
-                src={smallScreenArrow}
-                alt="..."
-                className=" pb-3 hidden sm:block w-[40px]"
-              />
+              <Link
+                to={{
+                  pathname: "/get_started",
+                }}
+                state="get_started"
+              >
+                <img
+                  src={smallScreenArrow}
+                  alt="..."
+                  className=" pb-3 hidden sm:block w-[40px]"
+                />
+              </Link>
             </div>
           </div>
         </div>
