@@ -163,24 +163,82 @@ path {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-/* @media (min-width: 300px) {
-  .customModal {
-    background: transparent;
+@media (min-width: 300px) {
+  .customOverlay {
     animation-fill-mode: forwards !important;
-    max-width: 100%;
+  }
+  .customModal {
+    background: rgb(5 16 54);
+
+    border: 1px solid #0074e5;
+
+    animation-fill-mode: forwards !important;
+
+    opacity: 0.9 !important;
+
     color: white;
     width: 100wh;
+    overflow: hidden;
+    border-radius: 4px;
   }
-} */
+}
 @media (min-width: 481px) {
-  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .customOverlay {
+    animation-fill-mode: forwards !important;
+  }
+  .customModal {
+    background: rgb(5 16 54);
+
+    border: 1px solid #0074e5;
+
+    animation-fill-mode: forwards !important;
+
+    opacity: 0.9 !important;
+
+    color: white;
+    width: 100wh;
+    overflow: hidden;
+    border-radius: 4px;
+  }
 }
 @media (min-width: 641px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .customOverlay {
+    animation-fill-mode: forwards !important;
+  }
+  .customModal {
+    background: rgb(5 16 54);
+
+    border: 1px solid #0074e5;
+
+    animation-fill-mode: forwards !important;
+
+    opacity: 0.9 !important;
+
+    color: white;
+    width: 100wh;
+    overflow: hidden;
+    border-radius: 4px;
+  }
 }
 
 @media (min-width: 961px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .customOverlay {
+    animation-fill-mode: forwards !important;
+  }
+  .customModal {
+    background: rgb(5 16 54);
+
+    border: 1px solid #0074e5;
+
+    animation-fill-mode: forwards !important;
+
+    opacity: 0.9 !important;
+
+    color: white;
+    width: 100wh;
+    overflow: hidden;
+    border-radius: 4px;
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
