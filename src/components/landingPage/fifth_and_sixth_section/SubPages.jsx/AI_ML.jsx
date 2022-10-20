@@ -11,7 +11,7 @@ const AI_ML = ({ title, paragraph, image }) => {
   return (
     <>
       <section className="h-[92vh] pt-2">
-        <div className="w-full bg-black text-white py-5">
+        <div className="w-full bg-black text-white py-2 md:pt-0">
           <div className="flex flex-col items-center justify-center gap-5 mt-[5rem] text-[#FFFFFF] ">
             <div className="w-[85%] flex-1">
               <h1 className="uppercase text-center sm:text-left md:text-left text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-widest font-akrobatRegular pb-5">

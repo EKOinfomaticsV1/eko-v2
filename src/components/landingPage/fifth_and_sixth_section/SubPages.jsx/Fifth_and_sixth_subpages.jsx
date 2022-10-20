@@ -96,7 +96,7 @@ const Fifth_and_sixth_subpages = () => {
         <Sidebar />
         <Hamburger />
         <Header />
-        <div className="pt-20"></div>
+        <div className="md:pt-10 lg:pt-20"></div>
         {/* {displayPage()} */}
         <AI_ML title={title} paragraph={paragraph} image={image} />
       </div>
