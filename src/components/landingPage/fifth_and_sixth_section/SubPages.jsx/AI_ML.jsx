@@ -28,7 +28,7 @@ const AI_ML = ({ title, paragraph, image }) => {
                     : "flex flex-col gap-2 md:gap-5 sm:gap-5 lg:gap-10 mt-[1rem] md:mt-[2rem] lg:mt-[5rem]  font-gillSans  flex-1 text-justify md:text-left"
                 }text-lg sm:text-lg md:text-[16px] lg:text-[18px] xl:text-[20px]`}
               >
-                <h1>Overview</h1>
+                <h1 className="text-center md:text-left">Overview</h1>
                 <p>{paragraph?.para1}</p>
                 <p>
                   <p>{paragraph?.para2}</p>
