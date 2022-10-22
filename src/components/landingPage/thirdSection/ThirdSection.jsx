@@ -181,7 +181,7 @@ function ThirdSection() {
               </div>
             </div> */}
             {/* 4 */}
-            <div className="w-full flex items-center z-10  translate-y-[20%] translate-x-[25%] md:translate-x-[16%] lg:translate-x-[5%]  sm:translate-x-[15%] lg:translate-y-[5%] overflow-hidden">
+            <div className="w-full flex items-center z-10  translate-y-[10%] translate-x-[25%] md:translate-x-[16%] lg:translate-x-[5%]  sm:translate-x-[15%] lg:translate-y-[5%] overflow-hidden">
               <div className="flex items-start w-[28%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%]">
                 <div className="bg-[#0085FE] aspect-square w-[8px] rounded-full -translate-y-[2.5px]"></div>
                 <div className="border-t-[#0085FE] border-t-2 border-dashed flex-1"></div>
