@@ -172,7 +172,7 @@ path {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-/* .fade-in-text {
+.fade-in-text {
   animation: fadeIn 0.5s;
 }
 @keyframes fadeIn {
@@ -182,7 +182,7 @@ path {
   100% {
     opacity: 1;
   }
-} */
+}
 
 @media (min-width: 300px) {
   .customOverlay {

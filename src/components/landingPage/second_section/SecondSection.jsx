@@ -56,7 +56,7 @@ const SecondSection = () => {
             as Healthcare, entertainment, finance, education, etc. AI is making
             our daily life more comfortable and fast.
           </p>
-          <div className="h-[10%]  flex justify-center gap-5 lg:gap-10 items-end overflow-hidden mt-20 md:mt-[14rem]">
+          <div className="h-[10%]  flex justify-center gap-5 lg:gap-10 items-end overflow-hidden lg:mt-10">
             <div className="group relative cursor-pointer ">
               <Link
                 className="text-sm md:text-[12px] xl:text-lg tracking-[0.1em] pb-1 font-semibold font-gillSans"
