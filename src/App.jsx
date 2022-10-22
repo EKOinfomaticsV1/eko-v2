@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="">
       <Routes>
+        <Route path="*" element={<Home />} />
         <Route exact path="/" element={<Home />} />
         <Route
           path="/fifth_sixth_subpage"
