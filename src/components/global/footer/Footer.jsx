@@ -103,16 +103,20 @@ const Footer = () => {
           <div className="pb-10 mt-10">
             <h1 className="text-xl ">INDIA</h1>
             <p className="mt-5 text-gray-300 text-base sm:w-[60%] lg:w-[50%] max-w-[350px]">
-              No.76, 7th A cross, 4th B Block, Koramangala, Bangalore, Karnataka
-              560034.
+              <a href="https://goo.gl/maps/Ye6VP7egSJx3LUbm6" target="_blank">
+                No.76, 7th A cross, 4th B Block, Koramangala, Bangalore,
+                Karnataka 560034.
+              </a>
             </p>
           </div>
 
           <div className="pb-10 ">
             <h1 className="text-xl ">USA</h1>
             <p className="mt-5 text-gray-300 text-base sm:w-[60%] lg:w-[50%] max-w-[350px]">
-              EKO INFOMATICS SOLUTIONS INC. 171 Sylvan St Rutherford NJ
-              07070-2433 US
+              <a href="https://goo.gl/maps/D77hHcNhb3k4HA23A" target="_blank">
+                EKO INFOMATICS SOLUTIONS INC. 171 Sylvan St Rutherford NJ
+                07070-2433 US
+              </a>
             </p>
           </div>
 
