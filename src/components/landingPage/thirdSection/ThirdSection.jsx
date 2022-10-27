@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 // assets
-import thridSectionImg from "../../../assets/third_section/thridSectionImg.svg";
+// import thridSectionImg from "../../../assets/third_section/thridSectionImg.svg";
 import earth from "../../../assets/third_section/earth.mp4";
-import retail from "../../../assets/third_section/retail.png";
+// import retail from "../../../assets/third_section/retail.png";
 import Retail from "../../../assets/third_section/Retail.png";
 
 import Defence from "../../../assets/third_section/Defence.png";
 
 import Manufacture from "../../../assets/third_section/Manufacture.png";
-import Banking from "../../../assets/third_section/Banking.png";
-import Healthcare from "../../../assets/third_section/Healthcare.png";
+// import Banking from "../../../assets/third_section/Banking.png";
+// import Healthcare from "../../../assets/third_section/Healthcare.png";
 
 import RetailModal from "../../../assets/third_section/Modal/RetailModal.png";
 import TelecomModal from "../../../assets/third_section/Modal/TelecomModal.png";
@@ -17,7 +17,7 @@ import EducationModal from "../../../assets/third_section/Modal/EducationModal.p
 import BankingModal from "../../../assets/third_section/Modal/BankingModal.png";
 
 import "react-responsive-modal/styles.css";
-import { Modal } from "react-responsive-modal";
+// import { Modal } from "react-responsive-modal";
 import ModalShow from "./ModalShow";
 
 function ThirdSection() {

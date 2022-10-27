@@ -23,7 +23,7 @@ const Fifth_and_sixth_subpages = () => {
 
   const location = useLocation();
   const selectedItem = location.state;
-  console.log("USE LOCATION DATA", selectedItem);
+  // console.log("USE LOCATION DATA", selectedItem);
 
   const [title, setTitle] = useState("");
   const [paragraph, setParagraph] = useState({
