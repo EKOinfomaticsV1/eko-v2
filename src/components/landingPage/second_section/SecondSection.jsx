@@ -17,6 +17,10 @@ const SecondSection = () => {
     }
   }, [controlIs]);
 
+  useEffect(() => {
+    setControlIs(true);
+  }, []);
+
   return (
     <div className="py-10 sm:py-0 w-full ">
       <h1 className="text-center font-semibold tracking-[0.06em] text-2xl sm:hidden">
@@ -30,6 +34,9 @@ const SecondSection = () => {
               className="mx-auto w-[90%] sm:w-full clip-polygon-1  "
               ref={videoRef}
               src={AIvideo}
+              autoPlay
+              loop
+              muted
             ></video>
 
             <button

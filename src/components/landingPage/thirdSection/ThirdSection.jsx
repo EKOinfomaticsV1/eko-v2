@@ -239,7 +239,7 @@ function ThirdSection() {
       </div>
 
       <h1 className=" text-right text-3xl md:text-3xl  lg:text-7xl  text-white px-5 mt-20  w-min ml-auto  tracking-widest z-10">
-        MULTILE INDUSTRIES
+        MULTIPLE INDUSTRIES
       </h1>
     </section>
   );
