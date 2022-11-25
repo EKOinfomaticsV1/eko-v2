@@ -85,42 +85,44 @@ const ModalFifthSixth = ({
 
                   {data.para3 ? (
                     <div className="flex flex-col justify-center items-start lg:items-center w-full lg:w-[1200px] gap-3 md:gap-5 ">
-                      <div className="flex justify-center items-start  gap-5">
-                        <div className="mt-[6px] md:mt-2">
-                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
-                        </div>
-                        <div>{data?.para3?.l1}</div>
-                      </div>
-                      <div className="flex justify-center items-start gap-5">
-                        <div className="mt-[6px] md:mt-2">
-                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
-                        </div>
-                        <div>{data?.para3?.l2}</div>
-                      </div>
-                      <div className="flex justify-center items-start  gap-5">
-                        <div className="mt-[6px] md:mt-2">
-                          <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
-                        </div>
-                        <div>{data?.para3?.l3}</div>
-                      </div>
-                      {data?.para3?.l4 ? (
-                        <div className="flex flex-col items-start md:items-center">
-                          <div className="flex justify-center items-start  gap-5">
-                            <div className="mt-[6px] md:mt-2">
-                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
-                            </div>
-                            <div>{data?.para3?.l4}</div>
+                      <div>
+                        <div className="flex justify-start items-center  gap-5">
+                          <div className="mt-[6px] md:mt-2">
+                            <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
                           </div>
-                          <div className="flex justify-center items-start gap-5">
-                            <div className="mt-[6px] md:mt-2">
-                              <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
-                            </div>
-                            <div>{data?.para3?.l5}</div>
-                          </div>
+                          <div>{data?.para3?.l1}</div>
                         </div>
-                      ) : (
-                        ""
-                      )}
+                        <div className="flex justify-start items-center gap-5">
+                          <div className="mt-[6px] md:mt-2">
+                            <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                          </div>
+                          <div>{data?.para3?.l2}</div>
+                        </div>
+                        <div className="flex justify-start items-center  gap-5">
+                          <div className="mt-[6px] md:mt-2">
+                            <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                          </div>
+                          <div>{data?.para3?.l3}</div>
+                        </div>
+                        {data?.para3?.l4 ? (
+                          <div className="flex flex-col items-start ">
+                            <div className="flex justify-start items-center  gap-5">
+                              <div className="mt-[6px] md:mt-2">
+                                <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                              </div>
+                              <div>{data?.para3?.l4}</div>
+                            </div>
+                            <div className="flex justify-start items-center gap-5">
+                              <div className="mt-[6px] md:mt-2">
+                                <div className="w-[0.4rem] h-[0.4rem] md:w-[0.5rem] md:h-[0.5rem] bg-white rounded"></div>
+                              </div>
+                              <div>{data?.para3?.l5}</div>
+                            </div>
+                          </div>
+                        ) : (
+                          ""
+                        )}
+                      </div>
                     </div>
                   ) : (
                     ""
